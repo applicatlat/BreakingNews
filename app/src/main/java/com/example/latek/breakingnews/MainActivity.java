@@ -63,9 +63,7 @@ public class MainActivity extends AppCompatActivity
     }
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s){
-        if (s.equals("order_by")){
-            getLoaderManager().restartLoader(0,null,this);
-        }
+        if (s.equals(getString(R.string.settings_section_by_key)) || s.equals(getString(R.string.settings_type_by_label))){ getLoaderManager().restartLoader(0,null,this); }
     }
     @Override
     protected void onDestroy(){
@@ -81,10 +79,10 @@ public class MainActivity extends AppCompatActivity
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         if (!choSection.isEmpty()) {
-                uriBuilder.appendQueryParameter("type", choSection);
+                uriBuilder.appendQueryParameter("q", choSection);
         }
         if (!choType.isEmpty()) {
-            uriBuilder.appendQueryParameter("orderBy", choType);
+            uriBuilder.appendQueryParameter("q", choType);
         } else {
             return new BackgroundJob(this, newsUrl);
         }
@@ -100,6 +98,7 @@ public class MainActivity extends AppCompatActivity
             noNews.setText(R.string.there_must_be_smth_wrong_with_your_connection_or_host_or_i_dk);
             noNews.setVisibility(View.VISIBLE);
             newsAdapter.clear();
+
         }
     }
     @Override
