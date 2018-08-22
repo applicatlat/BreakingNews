@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BreakingNews</string>
+    <string name="here_comes_news_json">Here Comes News JSON</string>
+    <string name="here_comes_date">HERE COMES DATE</string>
+    <string name="here_comes_author">HERE COMES AUTHOR</string>
+    <string name="here_comes_news_type">HERE COMES NEWS TYPE</string>
+    <string name="here_comes_summary">HERE COMES SUMMARY</string>
+    <string name="there_must_be_smth_wrong_with_your_connection_or_host_or_i_dk">THERE MUST BE SMTH WRONG WITH YOUR CONNECTION OR HOST OR I DK</string>
+    <string name="missing">Missing Author</string>
+    <!-- Lesson 7 preferences -->
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+    <!-- Strings For Minimum Magnitude Preference [CHAR LIMIT=30] -->
+    <string name="settings_min_magnitude_key" translatable="false">min_magnitude</string>
+    <string name="settings_min_magnitude_default" translatable="false">0</string>
+    <!-- Strings For choose section Preference [CHAR LIMIT=30] -->
+    <string name="settings_section_label">Choose your section</string>
+    <string name="settings_section_by_key" translatable="false">section</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_magnitude_value</string>
+    <!-- Label for order-by magnitude option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_magnitude_label">Magnitude</string>
+    <string name="settings_order_by_magnitude_value" translatable="false">magnitude</string>
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_type_by_label">type</string>
+    <string name="settings_type_by_value" translatable="false">type</string>
+</resources>

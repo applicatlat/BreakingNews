@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- divider source: https://stackoverflow.com/questions/5049852/android-drawing-separator-divider-line-in-layout-->
+    <ListView
+        android:id="@+id/list_projector"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle"
+        android:dividerHeight="1dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:id="@+id/no_news"
+        android:text="@string/there_must_be_smth_wrong_with_your_connection_or_host_or_i_dk"/>
+    <!-- Loading indicator is only shown before the first load -->
+    <ProgressBar
+        android:id="@+id/circle"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

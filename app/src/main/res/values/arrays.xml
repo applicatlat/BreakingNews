@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="select_section">
+        <item>Politics</item>
+        <item>Sport</item>
+        <item>Default</item>
+    </string-array>
+
+    <string-array name="section_value">
+        <item>politics</item>
+        <item>sport</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="selectionData">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="select_type">
+        <item>Oldest to Newest</item>
+        <item>Default</item>
+    </string-array>
+
+    <string-array name="type_value">
+        <item>oldest</item>
+        <item>newest</item>
+    </string-array>
+
+</resources>
